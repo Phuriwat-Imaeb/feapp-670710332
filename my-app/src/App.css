@@ -1,38 +1,65 @@
-.App {
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  font-family: 'Segoe UI', 'Sarabun', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h1 {
+  color: #2d2d2d;
+  margin-bottom: 28px;
+  font-size: 28px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px 24px;
+  width: 240px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #f0f0f0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.profile-card h3 {
+  margin: 0 0 8px 0;
+  color: #4a4a4a;
+  font-size: 18px;
+}
+
+.profile-card p {
+  margin: 0 0 10px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.profile-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.profile-card li {
+  background: #eef6f2;
+  color: #2f7a5a;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 999px;
 }
