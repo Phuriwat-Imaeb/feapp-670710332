@@ -53,6 +53,7 @@ import MovieDetail from './pages/MovieDetail';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Playground from './pages/Playground';
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/movies/:id" element={<MovieDetail />} />
            <Route path="*" element={<NotFound />} />
+           <Route path="/playground" element={<Playground />} />
         </Routes>
       </main>
       <Footer />                {/* ← เห็นทุกหน้า */}
